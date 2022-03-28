@@ -1,3 +1,11 @@
+# To-Do App from 28minutes course
+
+Hi. This is the To-Do app in React that will be hooked up to a Spring backend that I am doing for my tutorial.
+It's good learning so I'm pushing it to a repo here!
+
+Thanks!
+Shaun
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
