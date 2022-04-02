@@ -1,5 +1,13 @@
 @import url(https://unpkg.com/bootstrap@4.1.0/dist/css/bootstrap.min.css);
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #222222;
+}
+
 .App {
   text-align: center;
 }
@@ -7,6 +15,17 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
