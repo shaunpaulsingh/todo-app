@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-import { Component } from 'react';
-import FirstComponent from './components/learning-examples/FirstComponent'
-import SecondComponent from './components/learning-examples/SecondComponent'
-import ThirdComponent from './components/learning-examples/ThirdComponent'
+//import { Component } from 'react';
+//import FirstComponent from './components/learning-examples/FirstComponent'
+//import SecondComponent from './components/learning-examples/SecondComponent'
+//import ThirdComponent from './components/learning-examples/ThirdComponent'
 import TodoApp from './components/todo/TodoApp';
-import Counter from './counter/Counter';
+//import Counter from './counter/Counter';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
   );
 }
 
+/*
 class LearningComponents extends Component{
   render() {
     return (
@@ -28,4 +29,6 @@ class LearningComponents extends Component{
     );
   }
 }
+*/
+
 export default App;

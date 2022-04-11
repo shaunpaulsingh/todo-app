@@ -1,9 +1,8 @@
-import {Component} from 'react'
+import React from 'react'
 
-class ErrorComponent extends Component{
-    render () {
-        return <div>An Error has occured.</div>
-    }
+function ErrorComponent(){
+    return <div>An Error has occured.</div>
+    
 }
 
 export default ErrorComponent;
