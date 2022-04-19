@@ -11,6 +11,7 @@ class WelcomeComponent extends Component {
             welcomeMessage : '',
         }
         this.handleSuccessfulResponse = this.handleSuccessfulResponse.bind(this);
+        this.handleErrorResponse = this.handleErrorResponse.bind(this);
     }
 
     render() {
@@ -36,11 +37,16 @@ class WelcomeComponent extends Component {
     retrieveWelcomeMessage(){
         //HelloWorldService.executeHelloWorldBeanService().then(response => this.handleSuccessfulResponse(response))
 
-        HelloWorldService.executeHelloWorldPathVariableService(this.props.params.name).then(response => this.handleSuccessfulResponse(response))
+        HelloWorldService.executeHelloWorldPathVariableService(this.props.params.name).then(response => this.handleSuccessfulResponse(response)).catch(error => this.handleErrorResponse(error));
     }
 
     handleSuccessfulResponse(response){
         this.setState({welcomeMessage: response.data.message});
+    }
+
+    handleErrorResponse(error){
+        console.log(error.response);
+        this.setState({welcomeMessage: error.response.data.message});
     }
 }
 
